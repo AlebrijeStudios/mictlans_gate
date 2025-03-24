@@ -1,3 +1,28 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="menu-title">Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let elemento of elementos" [routerLink]="elemento.ruta" routerDirection="root">
+        
+       
+        <ng-container *ngIf="elemento.icono.endsWith('.svg'); else iconoNormal">
+          <img [src]="elemento.icono" slot="start" width="24" height="24" style="margin-right: 8px;" />
+        </ng-container>
+        <ng-template #iconoNormal>
+          <ion-icon [name]="elemento.icono" slot="start"></ion-icon>
+        </ng-template>
+
+        <!-- Nombre del menú -->
+        <ion-label>{{ elemento.nombre }}</ion-label>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>
+

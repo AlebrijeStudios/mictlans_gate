@@ -1,0 +1,74 @@
+/* Fondo del menú */
+::ng-deep ion-menu {
+  --background: #1f1b24; /* Fondo oscuro */
+}
+
+/* Header del menú */
+::ng-deep ion-menu ion-header {
+  height: 10rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilo decorativo BG tipo diagonal */
+::ng-deep ion-menu ion-header::before {
+  content: '';
+  position: absolute;
+  height: 10rem;
+  width: 130%;
+  background: linear-gradient(135deg, #4b3b4f 30%, rgb(28, 2, 38));
+  transform: rotate(-10deg);
+  border-radius: 10px 10px 10px 50px;
+  margin-top: -3rem;
+  margin-left: -1rem;
+  box-shadow: 0 1px 10px rgba(59, 24, 40, 0.5);
+  z-index: 0;
+}
+
+::ng-deep ion-menu ion-header {
+  position: relative;
+  background-image: url('../assets/img/Forest.jpg'); 
+  background-size: cover;
+  background-position: center;
+  z-index: 0; 
+  overflow: hidden; 
+}
+
+/* Toolbar sobre el BG */
+::ng-deep ion-menu ion-toolbar {
+  --background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Título del menú */
+::ng-deep .menu-title {
+  font-family: 'Press Start 2P', monospace !important;
+  font-size: 20px;
+  color: rgb(137, 125, 125) !important;
+  text-shadow: 0 0 5px rgb(65, 13, 121);
+  text-align: center;
+}
+
+
+/* Ítems del menú */
+::ng-deep ion-menu ion-item {
+  --background: rgb(28, 2, 38) !important;
+  --color: white !important;
+  font-family: 'Press Start 2P', monospace !important;
+  font-size: 15px !important;
+  border-left: 5px solid rgb(137, 125, 125);
+  margin-bottom: 8px; 
+  border-radius: 4px;  
+}
+
+
+/* Texto de los ítems */
+::ng-deep ion-menu ion-label {
+  font-family: 'Press Start 2P', monospace !important;
+  color: rgb(137, 125, 125) !important;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgb(51, 13, 121);
+}
