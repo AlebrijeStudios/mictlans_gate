@@ -16,4 +16,50 @@
     letter-spacing: 1px;
     text-shadow: 0 0 5px rgb(65, 13, 121);
   }
-  
+
+/* IMÁGENES GRANDES y centradas */
+.row-g {
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* TARJETAS retro oscuras */
+ion-card {
+  background-color: #2c1c30;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+}
+
+/* TÍTULOS de tarjetas */
+.c-b-t {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  color: rgb(137, 125, 125) !important;
+  text-shadow: 0 0 5px rgb(65, 13, 121);
+  text-align: center;
+}
+
+/* CONTENIDO de tarjetas */
+.c-b-c {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  color: #d0c9c9;
+  text-shadow: 0 0 2px #000;
+  line-height: 1.6;
+  padding: 10px;
+  text-align: justify;
+}
