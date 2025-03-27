@@ -1,10 +1,21 @@
 import { Injectable } from '@angular/core';
 import { datosper,datositem,datosescene,datosmeca } from '../interfaces/interfaces'; 
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { HttpClient } from '@angular/common/http';
+import { personajes } from '../interfaces/interfaces';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MictlansService {
 
-  constructor() { }
+  constructor(private http: HttpClient, private firestore: AngularFirestore) { }
+
+  getDatos() {
+    return this.firestore.collection('personajes').snapshotChanges();
+  }
+
+  getDetalle(id: string) {
+    return this.firestore.collection('personajes').doc<personajes>(id).valueChanges();
+  }
 }

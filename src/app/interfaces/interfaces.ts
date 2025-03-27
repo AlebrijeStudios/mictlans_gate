@@ -1,14 +1,15 @@
 export interface datosper{ //Interfaz de los personajes: Principal y enemigos
     id:string;
-    data:personaje;
+    data:personajes;
 }
-export interface personaje{    
+export interface personajes{    
     nombre:string;
     imagen:string;
     salud:number;
     armas:string;
     descripcion:string;
-    tipo_personaje:string;
+    rol:string;
+    dano:number;
 }
 
 export interface datositem{ //Interfaz de los items

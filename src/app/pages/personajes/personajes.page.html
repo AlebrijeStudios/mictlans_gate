@@ -1,1 +1,20 @@
 <app-header titulo = "personajes"></app-header>
+<ion-content>
+    <ion-card (click)="verDetalle(personaje.id)" *ngFor="let personaje of PersonajesRecientes" color="success" class="planet-card">
+        <ion-card-header>
+          <ion-card-title>Nombre: {{ personaje.data.nombre }}</ion-card-title>
+          <ion-card-subtitle>Salud: {{ personaje.data.salud }}</ion-card-subtitle>
+          <ion-card-subtitle>Armas: {{ personaje.data.armas }}</ion-card-subtitle>
+          <ion-card-subtitle>Descripción: {{ personaje.data.descripcion }}</ion-card-subtitle>
+          <ion-card-subtitle>Rol: {{ personaje.data.rol }}</ion-card-subtitle>   
+          <ion-col size="6" class="ion-no-padding">
+            <ion-img 
+              [src]="personaje.data.imagen" 
+              alt="Imagen"
+              class="ion-c-m-img">
+            </ion-img>
+          </ion-col>      
+  
+        </ion-card-header>
+      </ion-card>
+  </ion-content>
