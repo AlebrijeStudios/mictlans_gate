@@ -1,3 +1,53 @@
-<p>
-  detalle works!
-</p>
+<ion-content class="persona-theme">
+  <div class="personaje-image-container">
+    <ion-item lines="none">
+      <img [src]="PersonajeDet.imagen" alt="Imagen del personaje" class="imagen-personaje">
+    </ion-item>
+  </div>
+
+  <ion-card class="personaje-card">
+    <ion-card-header>
+      <ion-card-subtitle>Personaje</ion-card-subtitle>
+      <ion-card-title class="personaje-name">{{PersonajeDet.nombre}}</ion-card-title>
+      <ion-card-subtitle>Rol del Personaje</ion-card-subtitle>
+      <ion-card-title class="personaje-name">{{PersonajeDet.rol}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="info-card">
+    <ion-card-header>
+      <ion-card-subtitle>Datos adicionales del personaje</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item lines="none">
+          <ion-label>Armas:</ion-label>
+          <ion-note color="secondary">{{PersonajeDet.armas}}</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Salud:</ion-label>
+          <ion-note color="secondary">{{PersonajeDet.salud}}</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Daño:</ion-label>
+          <ion-note color="secondary">{{PersonajeDet.dano}}</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>Descripción:</ion-label>
+          <ion-note color="secondary">{{PersonajeDet.descripcion}}</ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-footer no-border>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="back-button" (click)="regresar()">
+          <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+          <ion-label>Regresar</ion-label>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

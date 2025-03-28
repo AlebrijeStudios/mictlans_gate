@@ -18,4 +18,20 @@ export class MictlansService {
   getDetalle(id: string) {
     return this.firestore.collection('personajes').doc<personajes>(id).valueChanges();
   }
+
+  getControles() {
+    return this.firestore.collection('controles').snapshotChanges();
+  }
+
+  getItems() {
+    return this.firestore.collection('items').snapshotChanges();
+  }
+
+  getMecanicas() {
+    return this.firestore.collection('mecanicas').snapshotChanges();
+  }
+
+  getEscenarios() {
+    return this.firestore.collection('escenarios').snapshotChanges();
+  }
 }

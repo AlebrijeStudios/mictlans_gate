@@ -14,9 +14,9 @@ export interface personajes{
 
 export interface datositem{ //Interfaz de los items
     id:string;
-    data:item;
+    data:items;
 }
-export interface item{    
+export interface items{    
     nombre:string;
     funcionalidad:string;
     imagen:string;
@@ -29,7 +29,7 @@ export interface datosescene{ //Interfaz de los escenarios
 }
 export interface escenarios{    
     nombre:string;
-    funcionalidad:string;
+    nivel:number;
     imagen:string;
     descripcion:string;
 }

@@ -16,3 +16,39 @@
   letter-spacing: 1px;
   text-shadow: 0 0 5px rgb(65, 13, 121);
 }
+
+ion-content {
+  .card-for {
+    background: linear-gradient(to bottom, #4b3b4f, #1e1123);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px 16px;
+    transition: transform 0.2s ease;
+  }
+
+  .card-for:hover {
+    transform: scale(1.01);
+  }
+
+  /* Títulos y subtítulos */
+  .h-text-t {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  color: rgb(137, 125, 125) !important;
+  text-shadow: 0 0 5px rgb(65, 13, 121);
+  }
+
+  .h-text-s {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    color: rgb(137, 125, 125) !important;
+    text-shadow: 0 0 5px rgb(65, 13, 121);
+  }
+
+  .h-text-c {
+    font-family: 'Press Start 2P', monospace;
+    color: rgb(137, 125, 125) !important;
+    text-shadow: 0 0 5px rgb(65, 13, 121);
+    font-size: 0.70rem;
+  }
+}

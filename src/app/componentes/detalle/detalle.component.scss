@@ -1,0 +1,86 @@
+.persona-theme {
+    --background: linear-gradient(to bottom, rgb(27, 2, 35), #743b84);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  /* Imagen del personaje */
+  .personaje-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .imagen-personaje {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Tarjetas principales */
+  .personaje-card, .info-card {
+    background: linear-gradient(to bottom, #3e1f47, #1b0c22);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    margin: 16px;
+  }
+  
+  /* Títulos principales */
+  .personaje-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff9e57; /* Naranja cálido retro */
+    text-shadow: 0 0 4px #000;
+  }
+  
+  /* Subtítulos dentro de tarjetas */
+  ion-card-subtitle {
+    font-size: 1rem;
+    color: #e07a5f;
+    font-weight: 500;
+  }
+  
+  /* Lista de detalles internos */
+  ion-item {
+    
+    background: linear-gradient(to bottom, #2b1a1e, #140c0e);
+    border-radius: 8px;
+    margin: 5px 0;
+  }
+  
+  /* Iconos opcionales */
+  .icono {
+    width: 26px;
+    height: 26px;
+  }
+  
+  /* Botón "Regresar" */
+  .back-button {
+    --background: transparent;
+    --color: #ff9e57;
+  }
+  
+  .back-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Etiquetas dentro de items */
+  ion-label {
+    font-size: 1rem; 
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  /* Datos (valores como "Armas", "Salud") */
+  ion-note {
+    font-size: 1rem; 
+    font-weight: 600;
+    color: #ffd39a; /* Durazno claro */
+  }
+  
+  
