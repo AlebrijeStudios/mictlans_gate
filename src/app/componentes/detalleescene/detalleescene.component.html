@@ -1,0 +1,36 @@
+<ion-content class="escenario-theme">
+
+  <ion-card class="escenario-card">
+    <ion-card-header>
+      <ion-card-subtitle>Nombre</ion-card-subtitle>
+      <ion-card-title class="escenario-name">{{EscenarioDet.nombre}}</ion-card-title>
+      <ion-card-subtitle>Nivel</ion-card-subtitle>
+      <ion-card-title class="escenario-name">{{EscenarioDet.nivel}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="info-card">
+    <ion-card-header>
+      <ion-card-subtitle>Información adicional</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item lines="none">
+          <ion-label>Descripción:</ion-label>
+          <ion-note color="secondary">{{EscenarioDet.descripcion}}</ion-note>
+        </ion-item>
+      </ion-list> <!-- Cierre de la lista -->
+    </ion-card-content>
+  </ion-card>
+
+  <ion-footer no-border>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="back-button" (click)="regresar()">
+          <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+          <ion-label>Regresar</ion-label>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

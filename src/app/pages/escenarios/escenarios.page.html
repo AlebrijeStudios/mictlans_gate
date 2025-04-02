@@ -1,19 +1,17 @@
-<app-header titulo = "escenarios"></app-header>
+<app-header titulo="escenarios"></app-header>
 
 <ion-content>
-    <ion-card 
+  <ion-card 
+    (click)="verDetalleScene(escenario.id)" 
     *ngFor="let escenario of EscenariosRecientes" 
     class="card-for"
   >
-  
-<img [src]="escenario.data.imagen" style="height: 40hv; width: 60hv;">
-      <ion-card-header>
-        <ion-card-title class="h-text-t">Nombre: {{escenario.data.nombre}}</ion-card-title>
-        <ion-card-subtitle class="h-text-s">Nivel: {{escenario.data.nivel}}</ion-card-subtitle>
-      </ion-card-header>
-      <ion-card-content>
-        <h2 class="h-text-c">Descripción: {{escenario.data.descripcion}}</h2>
-      </ion-card-content>
-    </ion-card>
-  </ion-content>
+    <div class="image-container">
+      <img [src]="escenario.data.imagen" class="scene-image">
+      <div class="level-overlay">
+        <ion-card-subtitle class="level-text">NIVEL: {{escenario.data.nivel}}</ion-card-subtitle>
+      </div>
+    </div>
+  </ion-card>
+</ion-content>
 

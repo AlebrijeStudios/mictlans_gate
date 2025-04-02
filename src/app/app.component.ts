@@ -40,6 +40,11 @@ export class AppComponent {
       nombre: 'Escenarios',
       ruta: '/escenarios'
     },
+    {
+      icono:'../assets/icon/nosotros.svg',
+      nombre: 'Sobre Nosotros',
+      ruta: '/sobrenosotros'
+    }
   ]
 
   constructor() {}

@@ -43,3 +43,17 @@ export interface mecanicas{
     items:string;
     Historia:string;
 }
+
+export interface datosnoso{ //Interfaz sobre el equipo de desarrollo
+    id:string;
+    data:nosotros;
+}
+
+export interface nosotros{
+    equipo:string;
+    fotoalexis:string;
+    fotofani:string;
+    fotoreyes:string;
+    informacion:string;
+    infovision:string; 
+}

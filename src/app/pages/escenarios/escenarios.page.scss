@@ -7,7 +7,7 @@
   padding-right: 12px;
 }
 
-  /* Estilos para el título dentro del header */
+/* Estilos para el título dentro del header */
 :host ::ng-deep ion-header ion-title {
   font-family: 'Press Start 2P', monospace !important;
   color: rgb(137, 125, 125) !important;
@@ -24,6 +24,7 @@ ion-content {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     margin: 20px 16px;
     transition: transform 0.2s ease;
+    overflow: hidden;
   }
 
   .card-for:hover {
@@ -31,24 +32,51 @@ ion-content {
   }
 
   /* Títulos y subtítulos */
-  .h-text-t {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 12px;
-  color: rgb(137, 125, 125) !important;
-  text-shadow: 0 0 5px rgb(65, 13, 121);
-  }
-
-  .h-text-s {
+  .h-text-t, .h-text-s, .h-text-c {
     font-family: 'Press Start 2P', monospace;
-    font-size: 12px;
     color: rgb(137, 125, 125) !important;
     text-shadow: 0 0 5px rgb(65, 13, 121);
+  }
+
+  .h-text-t, .h-text-s {
+    font-size: 12px;
   }
 
   .h-text-c {
+    font-size: 0.70rem;
+  }
+
+  /* Estilo de la tarjeta del escenario */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Ajuste para que sea más alta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scene-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .level-overlay {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+    text-align: center;
+    padding: 5px;
+  }
+
+  .level-text {
+    font-size: 1.5rem;
+    font-weight: bold;
     font-family: 'Press Start 2P', monospace;
     color: rgb(137, 125, 125) !important;
     text-shadow: 0 0 5px rgb(65, 13, 121);
-    font-size: 0.70rem;
   }
 }

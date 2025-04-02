@@ -18,7 +18,7 @@ export class DetalleComponent  implements OnInit {
   constructor(private detalle: MictlansService,
     private modalCtrl:ModalController) { }
 
-    //Funcion para cerrar la ventana de detalles de Personajes, Items, Escenarios y Mecanicas
+    //Funcion para cerrar la ventana de detalles de Personajes.
   regresar(){
     this.modalCtrl.dismiss();
   }

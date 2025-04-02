@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'escenarios',
     loadChildren: () => import('./pages/escenarios/escenarios.module').then( m => m.EscenariosPageModule)
+  },  {
+    path: 'sobrenosotros',
+    loadChildren: () => import('./pages/sobrenosotros/sobrenosotros.module').then( m => m.SobrenosotrosPageModule)
   },
+
 ];
 
 @NgModule({

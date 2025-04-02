@@ -62,6 +62,13 @@
   border-radius: 4px;  
 }
 
+/* Ajuste del tamaño de los íconos en el menú */
+::ng-deep ion-menu ion-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
 
 /* Texto de los ítems */
 ::ng-deep ion-menu ion-label {

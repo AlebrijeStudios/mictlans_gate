@@ -3,6 +3,7 @@ import { datosper,datositem,datosescene,datosmeca } from '../interfaces/interfac
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { HttpClient } from '@angular/common/http';
 import { personajes } from '../interfaces/interfaces';
+import { escenarios } from '../interfaces/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +33,16 @@ export class MictlansService {
   }
 
   getEscenarios() {
-    return this.firestore.collection('escenarios').snapshotChanges();
+    return this.firestore.collection('escenarios', ref => ref.orderBy('nivel', 'asc'))
+      .snapshotChanges();
+  }  
+
+  getDetallesEscenario(id: string) {
+    return this.firestore.collection('escenarios').doc<escenarios>(id).valueChanges();
   }
+
+  getNosotros() {
+    return this.firestore.collection('nosotros').snapshotChanges();
+  }
+
 }
