@@ -56,4 +56,7 @@ export interface nosotros{
     fotoreyes:string;
     informacion:string;
     infovision:string; 
+    nombreA:string;
+    nombreP:string;
+    nombreR:string;
 }
