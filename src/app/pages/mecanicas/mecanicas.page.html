@@ -1,19 +1,72 @@
-<app-header titulo = "mecanicas"></app-header>
+<app-header titulo="Mecánicas"></app-header>
 
-<ion-content>
-    <ion-card 
-    *ngFor="let mecanicas of MecanicasRecientes" 
-    class="card-for"
-  >
-  
-<!-- <img [src]="mecanicas.data.imagen" style="height: 40hv; width: 60hv;"> -->
-      <ion-card-header>
-        <ion-card-title class="h-text-t">Controles: {{mecanicas.data.Controles}}</ion-card-title>
-        <ion-card-subtitle class="h-text-s">Items: {{mecanicas.data.items}}</ion-card-subtitle>
-      </ion-card-header>
-      <ion-card-content>
-        <h2 class="h-text-c">Historia: {{mecanicas.data.Historia}}</h2>
-      </ion-card-content>
-    </ion-card>
-  </ion-content>
+<ion-content class="mecanicas-content">
+
+  <!-- Título Principal -->
+  <div class="mecanicas-title">
+    Mecánicas del Juego
+  </div>
+
+  <!-- Lista de Mecánicas -->
+  <ion-card *ngFor="let meca of MecanicasRecientes" class="mecanica-card">
+    <ion-card-header>
+      <ion-card-title class="mecanica-name">{{meca.data.clasificacion}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+      <!-- Sección de Combate -->
+      <div class="mecanica-section">
+        <h2 class="section-title">
+          <ion-icon name="flame" class="icono-titulo"></ion-icon> Combate
+        </h2>
+        <p class="mecanica-text">{{meca.data.combate}}</p>
+      </div>
+
+      <!-- Sección de Controles -->
+      <div class="mecanica-section">
+        <h2 class="section-title">
+          <ion-icon name="game-controller" class="icono-titulo"></ion-icon> Controles
+        </h2>
+        <p class="mecanica-text">{{meca.data.controles}}</p>
+      </div>
+
+      <!-- Sección de Historia -->
+      <div class="mecanica-section">
+        <h2 class="section-title">
+          <ion-icon name="book" class="icono-titulo"></ion-icon> Historia
+        </h2>
+        <p class="mecanica-text">{{meca.data.historia}}</p>
+      </div>
+
+      <!-- Sección de Interacción -->
+      <div class="mecanica-section">
+        <h2 class="section-title">
+          <ion-icon name="chatbubbles" class="icono-titulo"></ion-icon> Interacción
+        </h2>
+        <p class="mecanica-text">{{meca.data.interaccion}}</p>
+      </div>
+
+      <!-- Sección de Movimiento -->
+      <div class="mecanica-section">
+        <h2 class="section-title">
+          <ion-icon name="walk" class="icono-titulo"></ion-icon> Movimiento
+        </h2>
+        <p class="mecanica-text">{{meca.data.movimiento}}</p>
+      </div>
+
+      <!-- Sección de Progreso -->
+      <div class="mecanica-section">
+        <h2 class="section-title">
+          <ion-icon name="trophy" class="icono-titulo"></ion-icon> Progreso
+        </h2>
+        <p class="mecanica-text">{{meca.data.progreso}}</p>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+
 

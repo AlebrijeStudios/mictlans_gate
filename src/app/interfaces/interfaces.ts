@@ -39,9 +39,13 @@ export interface datosmeca{ //Interfaz de las mecanicas del videojuego
     data:mecanicas;
 }
 export interface mecanicas{    
-    Controles:string;
-    items:string;
-    Historia:string;
+    clasificacion:string;
+    combate:string;
+    controles:string;
+    historia:string;
+    interaccion:string;
+    movimiento:string;
+    progreso:string;
 }
 
 export interface datosnoso{ //Interfaz sobre el equipo de desarrollo

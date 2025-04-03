@@ -53,3 +53,73 @@ ion-content {
     font-size: 0.70rem;
   }
 }
+ion-content {
+  .mecanicas-content {
+    --background: linear-gradient(to bottom, #1e1123, #3e1f47);
+    padding: 16px;
+    color: #fff;
+  }
+
+  /* Título principal */
+  .mecanicas-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #ff9e57;
+    text-shadow: 0 0 4px #000;
+  }
+
+  /* Tarjeta de mecánica */
+  .mecanica-card {
+    background: linear-gradient(to bottom, #3e1f47, #1b0c22);
+    border-radius: 12px;
+    margin: 12px 0;
+    color: #ffffff;
+    padding: 10px;
+  }
+
+  /* Icono del título */
+  .icono-titulo {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  /* Sección de mecánica */
+  .mecanica-section {
+    margin: 8px 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  /* Título de cada sección */
+  .section-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.1rem;
+    color: #ff9e57;
+    text-shadow: 0 0 4px #000;
+    margin-bottom: 5px;
+  }
+
+  /* Texto de la mecánica */
+  .mecanica-text {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    color: #ffd39a;
+    text-align: left;
+    margin: 5px 0;
+  }
+
+  .mecanica-name {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.2rem;
+    color: #ff9e57;
+    text-shadow: 0 0 4px #000;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+}
